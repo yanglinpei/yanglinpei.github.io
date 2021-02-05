@@ -34,7 +34,7 @@ layout: default
 * [SHELL编程之语法基础](docs/books/shellbian-cheng-zhi-yu-fa-ji-chu.md)
 * [SHELL编程之特殊符号](docs/books/shellbian-cheng-zhi-te-shu-fu-hao.md)
 * [SHELL编程之内建命令](docs/books/shellbian-cheng-zhi-nei-jian-ming-ling.md)
-* [SHELL编程之常用技巧](docs/books/shellbian-cheng-zhi-chang-yong-ji-qiao.md)
+* [SHELL编程之常用技巧](docs/books/shellbian-cheng-zhi-chang-yong-ji-qiao.md)12
 * [sed命令进阶](docs/books/sedming-ling-jin-jie.md)
 * [find命令详解](docs/books/findming-ling-xiang-jie.md)
 * [ext4数据恢复实战及文件系统结构详解](docs/ext4/ext4.md)
@@ -48,5 +48,5 @@ Linux排障
 
 即时通信系统原理
 
-[K8s](K8s.md)
+* [K8s原理](K8s.md)
 
