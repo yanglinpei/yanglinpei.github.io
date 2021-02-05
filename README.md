@@ -2,7 +2,7 @@
 
 * * *
 操作系统
-* [Linux排障](linux-troubleshoot.md)
+* [Linux排障](linux-troubleshooting.md)
 
 
 
