@@ -43,11 +43,29 @@ K8S核心的强大的地方在于：
 
 他以一种更高的视角，将当代的应用程序的运行方式进行了拆解和抽象，提供了一系列好用的机制。
 
+
+
+![k8s整体架构](/pics/k8s1.png)
+
+
 一个完成的K8S集群包含Master（控制节点）和Node（计算节点）
 
-Master节点由负责 API 服务的 kube-apiserver、负责调度的 kube-scheduler，以及负责容器编排的 kube-controller-manager组成。集群的持久化数据存储在Etcd
+Master节点由负责 API 服务的 kube-apiserver、负责调度的 kube-scheduler，以及负责容器编排的 kube-controller-manager组成。集群的持久化数据通过kube-apiserver处理，存储在Etcd
 
-![这是张图片](/pics/k8s1.png)
+Node节点，最核心的部分是kubelet
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
