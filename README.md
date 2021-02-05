@@ -9,7 +9,7 @@
 
 * * *
 云服务
-* [K8s原理](docs/K8s.md)
+* [K8s原理](docs/k8s.md)
 
 
 * * *
