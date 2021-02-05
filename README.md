@@ -1,52 +1,10 @@
-# yanglinpei.github.io
-
-
-
----
-layout: default
----
-
-**建设中......**
-
-
-
-希望你喜欢。
-
 ## 目录
 
-* [Introduction](index.md)
-* [Linux的进程优先级](docs/books/linuxde-jin-cheng-you-xian-ji.md)
-* [Linux内存中的Cache真的能被回收么？](docs/books/linuxnei-cun-zhong-de-cache-zhen-de-neng-bei-hui-shou-yao-ff1f.md)
-* [Linux的内存回收和交换](docs/books/linuxde_nei_cun_hui_shou_he_jiao_huan.md)
-* [Linux的IO调度](docs/books/linuxde-io-diao-du.md)
-* [Cgroup - 从CPU资源隔离说起](docs/books/cgroup_linux_cpu_control_group.md)
-* [Cgroup - Linux内存资源管理](docs/books/cgroup_linux_memory_control_group.md)
-* [Cgroup - Linux的IO资源隔离](docs/books/cgroup_linux_io_control_group.md)
-* [Cgroup - Linux的网络资源隔离](docs/books/cgroup_linux_network_control_group.md)
-* [Cgroup - 详解Cgroup V2](docs/详解Cgroup V2.md)
-* [Linux的进程间通信 － 管道](docs/books/linuxde-jin-cheng-jian-tong-xin-guan-dao.md)
-* [Linux的进程间通信-文件和文件锁](docs/books/linuxde-jin-cheng-jian-tong-4fe1-wen-jian-he-wen-jian-suo.md)
-* [Linux进程间通信-共享内存](docs/books/linuxjin-cheng-jian-tong-4fe1-gong-xiang-nei-cun.md)
-* [Linux的进程间通信 - 消息队列](docs/books/linuxde-jin-cheng-jian-tong-xin-xiao-xi-dui-lie.md)
-* [Linux的进程间通信-信号量](docs/books/linuxde-jin-cheng-jian-tong-4fe1-xin-hao-liang.md)
-* [SHELL编程之执行环境](docs/books/shellbian-cheng-zhi-zhi-xing-huan-jing.md)
-* [SHELL编程之执行过程](docs/books/shellbian-cheng-zhi-zhi-xing-guo-cheng.md)
-* [SHELL编程之语法基础](docs/books/shellbian-cheng-zhi-yu-fa-ji-chu.md)
-* [SHELL编程之特殊符号](docs/books/shellbian-cheng-zhi-te-shu-fu-hao.md)
-* [SHELL编程之内建命令](docs/books/shellbian-cheng-zhi-nei-jian-ming-ling.md)
-* [SHELL编程之常用技巧](docs/books/shellbian-cheng-zhi-chang-yong-ji-qiao.md)12
-* [sed命令进阶](docs/books/sedming-ling-jin-jie.md)
-* [find命令详解](docs/books/findming-ling-xiang-jie.md)
-* [ext4数据恢复实战及文件系统结构详解](docs/ext4/ext4.md)
-* [xfs文件系统结构详解](docs/xfs/XFS文件系统结构.md)
-* [Socket缓存究竟如何影响TCP的性能](docs/Socket缓存究竟如何影响TCP的性能.md)
-* [Linux的TCP实现之:三次握手](docs/tcp/handshake/tcp_three_way_handshake.md)
-* [Linux的TCP实现之:四次挥手](docs/tcp/wavehand/TCP_Wavehand.md)
-* [Linux的TCP实现之:慢启动](docs/tcp/tcp_slowstart.md)
 
-Linux排障
-
-即时通信系统原理
+* [Linux排障](linux-troubleshoot.md)
 
 * [K8s原理](K8s.md)
 
+* [即时通信系统原理](im.md)
+
+* [python原理](python.md)
