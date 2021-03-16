@@ -26,6 +26,7 @@
  
  
  ### IO问题（表现：系统卡顿/应用性能抖动/IO高/load高/...）
+ 
     整体情况：syslog，TOP iowait, iotop, iostat 看avserv/avwait/avque, pidstat -d找到问题进程，跟踪strace -fp pid, lsof , opensnoop，一般原因：
         大量读写文件
         应用程序使用相关，如mysql慢sql，redis频繁快照等
