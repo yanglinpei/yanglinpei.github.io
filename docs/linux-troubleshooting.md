@@ -1,5 +1,5 @@
 
-###内存泄漏（表现：可用内存持续减少/OOM/进程内存消耗不多但系统内存不够/...）
+### 内存泄漏（表现：可用内存持续减少/OOM/进程内存消耗不多但系统内存不够/...）
     查看整体情况：syslog，TOP/ps观察进程RES，/proc/meminfo观察整体内存情况
         RES 高而 SHR 不高：可能堆内存泄漏，检查代码
         SHR 很高：tmpfs/shm持续增长，排查tmpfs/shm的使用
@@ -25,7 +25,7 @@
     pagecache回收失败导致内存不足：参考IO部分的pagecache部分
  
  
- ###IO问题（表现：系统卡顿/应用性能抖动/IO高/load高/...）
+ ### IO问题（表现：系统卡顿/应用性能抖动/IO高/load高/...）
     整体情况：syslog，TOP iowait, iotop, iostat 看avserv/avwait/avque, pidstat -d找到问题进程，跟踪strace -fp pid, lsof , opensnoop，一般原因：
         大量读写文件
         应用程序使用相关，如mysql慢sql，redis频繁快照等
@@ -43,7 +43,7 @@
             动态追踪（需要借助 probe）perf/ systemtap/ ebpf
 
 
-###网络问题（表现：抖动，延迟，丢包）
+### 网络问题（表现：抖动，延迟，丢包）
     整体情况：syslog/netstat -s/ss -s/dstat 查看报告，判断哪层可能有问题，再分层排查：tcpdump/tracepoint
     TCP层
         建立连接时：
@@ -100,7 +100,7 @@
         收包一次轮询多个包：解决：net.core.netdev_budget = 600
 
 
-###CPU（表现：系统卡顿/应用性能抖动/...）
+### CPU（表现：系统卡顿/应用性能抖动/...）
     syslog, TOP看哪种CPU使用高：sys /us / wa/ hi /si。strace/perf->ftrace->tracepoint/kprobe
         sys高， perf/ftrace排查时间段的，瞬时的可以用sysrq看。上述内存/网络/IO中的问题很多都有可能是CPU被内核使用率高的原因，比如
             内存碎片多cat /proc/vmstat|grep compact_fail，触发了直接内存规整。如使用大页THP，grep -i HugePages /proc/meminfo。关闭echo never > /sys/kernel/mm/transparent_hugepage/enabled / 
